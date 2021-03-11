@@ -125,6 +125,7 @@ debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
 debug.sf.disable_backpressure=0
 debug.cpurend.vsync=true
+ro.config.avoid_gfx_accel=true
 
 # Network manager
 persist.vendor.data.iwlan.enable=true
