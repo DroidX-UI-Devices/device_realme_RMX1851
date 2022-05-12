@@ -74,6 +74,9 @@ persist.vendor.data.profile_update=true
 persist.vendor.data.mode=concurrent
 ro.vendor.use_data_netmgrd=true
 
+# Disable Skia tracing by default
+debug.hwui.skia_atrace_enabled=false
+
 # Display post-processing
 ro.vendor.display.ad.sdr_calib_data=/vendor/etc/OPPO_OLED_AD_calib.cfg
 ro.vendor.display.cabl=2
