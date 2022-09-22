@@ -62,6 +62,7 @@ void vendor_load_properties()
         if ((Trim(operator_name) == "8")) {
         device = "RMX1851CN";
            property_override("ro.build.product", device.c_str());
+           property_override("ro.boot.verifiedbootstate", "green");
            for (const auto &source : ro_props_default_source_order) {
                set_ro_product_prop(source, "device", device.c_str());
                set_ro_product_prop(source, "model", "RMX1851");
@@ -71,6 +72,7 @@ void vendor_load_properties()
         } else if ((Trim(operator_name) == "30")) {
         device = "RMX1851";
            property_override("ro.build.product", device.c_str());
+           property_override("ro.boot.verifiedbootstate", "green");
            for (const auto &source : ro_props_default_source_order) {
                set_ro_product_prop(source, "device", device.c_str());
                set_ro_product_prop(source, "model", device.c_str());
@@ -82,6 +84,7 @@ void vendor_load_properties()
         } else if ((Trim(operator_name) == "31")) {
         device = "RMX1851";
            property_override("ro.build.product", device.c_str());
+           property_override("ro.boot.verifiedbootstate", "green");
            for (const auto &source : ro_props_default_source_order) {
                set_ro_product_prop(source, "device", device.c_str());
                set_ro_product_prop(source, "model", device.c_str());
@@ -94,6 +97,7 @@ void vendor_load_properties()
         device = "RMX1853";
            property_override("ro.build.description", "RMX1853-user 10 QKQ1.190918.001 1597290604 release-keys");
            property_override("ro.build.product", device.c_str());
+           property_override("ro.boot.verifiedbootstate", "green");
            for (const auto &source : ro_props_default_source_order) {
                set_ro_product_prop(source, "device", device.c_str());
                set_ro_product_prop(source, "model", device.c_str());
@@ -106,6 +110,7 @@ void vendor_load_properties()
         device = "RMX1855";
            property_override("ro.build.description", "RMX1855-user 10 QKQ1.190918.001 1597290604 release-keys");
            property_override("ro.build.product", device.c_str());
+           property_override("ro.boot.verifiedbootstate", "green");
            for (const auto &source : ro_props_default_source_order) {
                set_ro_product_prop(source, "device", device.c_str());
                set_ro_product_prop(source, "model", device.c_str());
@@ -117,6 +122,7 @@ void vendor_load_properties()
         } else if ((Trim(operator_name) == "34")) {
         device = "RMX1851";
            property_override("ro.build.product", device.c_str());
+           property_override("ro.boot.verifiedbootstate", "green");
            for (const auto &source : ro_props_default_source_order) {
                set_ro_product_prop(source, "device", device.c_str());
                set_ro_product_prop(source, "model", device.c_str());
