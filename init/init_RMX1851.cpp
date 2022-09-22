@@ -97,6 +97,7 @@ void vendor_load_properties()
         /* CHINA */
         if ((Trim(operator_name) == "8")) {
         device = "RMX1851CN";
+           property_override("ro.build.fingerprint", "google/raven/raven:13/TP1A.220624.021/8877034:user/release-keys");
            property_override("ro.build.product", device.c_str());
            property_override("ro.boot.verifiedbootstate", "green");
            for (const auto &source : ro_props_default_source_order) {
@@ -107,6 +108,7 @@ void vendor_load_properties()
         /* FOREIGN */
         } else if ((Trim(operator_name) == "30")) {
         device = "RMX1851";
+           property_override("ro.build.fingerprint", "google/raven/raven:13/TP1A.220624.021/8877034:user/release-keys");
            property_override("ro.build.product", device.c_str());
            property_override("ro.boot.verifiedbootstate", "green");
            for (const auto &source : ro_props_default_source_order) {
@@ -119,6 +121,7 @@ void vendor_load_properties()
         /* FOREIGN INDIA */
         } else if ((Trim(operator_name) == "31")) {
         device = "RMX1851";
+           property_override("ro.build.fingerprint", "google/raven/raven:13/TP1A.220624.021/8877034:user/release-keys");
            property_override("ro.build.product", device.c_str());
            property_override("ro.boot.verifiedbootstate", "green");
            for (const auto &source : ro_props_default_source_order) {
@@ -131,7 +134,7 @@ void vendor_load_properties()
         /* VIETNAM_128GB */
         } else if ((Trim(operator_name) == "32")) {
         device = "RMX1853";
-           property_override("ro.build.description", "RMX1853-user 10 QKQ1.190918.001 1597290604 release-keys");
+           property_override("ro.build.fingerprint", "google/raven/raven:13/TP1A.220624.021/8877034:user/release-keys");
            property_override("ro.build.product", device.c_str());
            property_override("ro.boot.verifiedbootstate", "green");
            for (const auto &source : ro_props_default_source_order) {
@@ -144,7 +147,7 @@ void vendor_load_properties()
         /* VIETNAM_64GB */
         } else if ((Trim(operator_name) == "33")) {
         device = "RMX1855";
-           property_override("ro.build.description", "RMX1855-user 10 QKQ1.190918.001 1597290604 release-keys");
+           property_override("ro.build.fingerprint", "google/raven/raven:13/TP1A.220624.021/8877034:user/release-keys");
            property_override("ro.build.product", device.c_str());
            property_override("ro.boot.verifiedbootstate", "green");
            for (const auto &source : ro_props_default_source_order) {
@@ -157,6 +160,7 @@ void vendor_load_properties()
         /* FOREIGN EUROPE*/
         } else if ((Trim(operator_name) == "34")) {
         device = "RMX1851";
+           property_override("ro.build.fingerprint", "google/raven/raven:13/TP1A.220624.021/8877034:user/release-keys");
            property_override("ro.build.product", device.c_str());
            property_override("ro.boot.verifiedbootstate", "green");
            for (const auto &source : ro_props_default_source_order) {
