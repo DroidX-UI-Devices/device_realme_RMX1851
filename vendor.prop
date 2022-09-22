@@ -107,6 +107,8 @@ debug.hwui.renderer=skiagl
 debug.renderengine.backend=skiaglthreaded
 renderthread.skia.reduceopstasksplitting=true
 vendor.gralloc.disable_ahardware_buffer=1
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
 
 # Network manager
 persist.vendor.data.iwlan.enable=true
