@@ -133,5 +133,6 @@ void vendor_load_properties()
         } else {
         LOG(ERROR) << "Unsupported variant";
         }
+    property_override("ro.apex.updatable", "false");
     }
 }
