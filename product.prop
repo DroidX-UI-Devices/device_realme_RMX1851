@@ -24,3 +24,6 @@ ro.adb.secure=0
 
 # Fingerprint
 fingerprint.nocleanup=true
+
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
