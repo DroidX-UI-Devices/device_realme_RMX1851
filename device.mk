@@ -98,6 +98,12 @@ PRODUCT_COPY_FILES += \
 # Properties
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
+# Adaptive Suspend
+PRODUCT_PROPERTY_OVERRIDES += \
+    suspend.short_suspend_threshold_millis=2000 \
+    suspend.short_suspend_backoff_enabled=true \
+    suspend.max_sleep_time_millis=40000
+
 # AID/fs configs
 PRODUCT_PACKAGES += \
     fs_config_files
