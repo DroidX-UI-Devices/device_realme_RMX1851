@@ -21,6 +21,36 @@ using android::base::SetProperty;
 using android::base::ReadFileToString;
 using android::base::Trim;
 
+static const char *snet_prop_key[] = {
+    "ro.boot.vbmeta.device_state",
+    "ro.boot.verifiedbootstate",
+    "ro.boot.flash.locked",
+    "ro.boot.veritymode",
+    "ro.boot.warranty_bit",
+    "ro.warranty_bit",
+    "ro.debuggable",
+    "ro.secure",
+    "ro.build.type",
+    "ro.build.tags",
+    "ro.build.selinux",
+    NULL
+};
+
+static const char *snet_prop_value[] = {
+    "locked",
+    "green",
+    "1",
+    "enforcing",
+    "0",
+    "0",
+    "0",
+    "1",
+    "user",
+    "release-keys",
+    "0",
+    NULL
+};
+
 std::vector<std::string> ro_props_default_source_order = {
     "",
     "odm.",
@@ -39,8 +69,14 @@ void property_override(char const prop[], char const value[], bool add = true)
         __system_property_add(prop, strlen(prop), value, strlen(value));
 }
 
+static void workaround_snet_properties() {
+    for (int i = 0; snet_prop_key[i]; ++i)
+        property_override(snet_prop_key[i], snet_prop_value[i]);
+}
+
 void vendor_load_properties()
 {
+    workaround_snet_properties();
     const auto set_ro_build_prop = [](const std::string &source,
             const std::string &prop, const std::string &value) {
         auto prop_name = "ro." + source + "build." + prop;
