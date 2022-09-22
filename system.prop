@@ -1,0 +1,109 @@
+# Art
+dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
+dalvik.vm.boot-dex2oat-threads=8
+dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7
+dalvik.vm.dex2oat-filter=everything
+dalvik.vm.dex2oat-threads=8
+dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7
+dalvik.vm.image-dex2oat-filter=everything
+dalvik.vm.image-dex2oat-threads=8
+
+# Audio
+audio.deep_buffer.media=true
+audio.offload.gapless.enabled=true
+persist.audio.fluence.voicecall=true
+persist.audio.fluence.voicerec=false
+persist.audio.fluence.speaker=true
+ro.af.client_heap_size_kbyte=7168
+ro.config.media_vol_steps=25
+ro.config.vc_call_vol_steps=7
+ro.qc.sdk.audio.fluencetype=none
+
+# BPF
+ro.kernel.ebpf.supported=true
+
+# Bluetooth
+bt.max.hfpclient.connections=1
+persist.bluetooth.disableinbandringing=false
+persist.bluetooth.disableabsvol=true
+persist.vendor.btstack.enable.splita2dp=true
+qcom.bluetooth.soc=cherokee
+vendor.bluetooth.soc=cherokee
+
+# Camera
+ro.camera.hfr.enable=1
+ro.camera.relight.enable=0
+ro.camera.attr.detect.enable=1
+
+# Data modules
+persist.data.netmgrd.qos.enable=true
+persist.vendor.data.mode=concurrent
+ro.vendor.use_data_netmgrd=true
+
+# Dexopt
+pm.dexopt.first-boot=quicken
+pm.dexopt.boot=verify
+
+# Display
+ro.qualcomm.cabl=0
+debug.sf.disable_client_composition_cache=1
+ro.vendor.display.ad=1
+ro.vendor.display.sensortype=2
+ro.vendor.display.ad.sdr_calib_data=/vendor/etc/OPPO_OLED_AD_calib.cfg
+
+# Graphics
+debug.sf.enable_hwc_vds=1
+persist.demo.hdmirotationlock=false
+persist.hwc.enable_vds=1
+ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+ro.surface_flinger.max_frame_buffer_acquired_buffers=2
+ro.surface_flinger.max_virtual_display_dimension=4096
+sdm.drop_skewed_vsync=1
+
+# IOP
+vendor.iop.enable_prefetch_ofr=1
+vendor.iop.enable_uxe=1
+
+# Media
+debug.stagefright.omx_default_rank.sw-audio=1
+debug.stagefright.omx_default_rank=0
+media.stagefright.thumbnail.prefer_hw_codecs=true
+
+# Memory optimizations
+ro.vendor.qti.sys.fw.bservice_enable=true
+
+# Netflix custom property
+ro.netflix.bsp_rev=Q670-14477-1
+
+# Pre-rendering
+ro.vendor.perf.scroll_opt=true
+
+# QC framework value-adds
+ro.vendor.qti.va_aosp.support=1
+
+# Radio
+DEVICE_PROVISIONED=1
+ril.subscription.types=NV,RUIM
+persist.rcs.supported=0
+persist.radio.hvolte.enable=1
+ro.telephony.default_network=22,20
+persist.radio.multisim.config=dsds
+persist.radio.custom_exp_ecc=1
+telephony.lteOnCdmaDevice=1
+
+# Sensors
+ro.qti.sensors.wu=false
+
+# Seamless transfer
+sys.fflag.override.settings_seamless_transfer=true
+
+# VoWIFI
+persist.data.iwlan.enable=true
+persist.data.iwlan.rekey=4294967295
+
+# Storage.xml moment
+persist.sys.binary_xml=false
+
+# WFD
+persist.sys.wfd.virtual=0

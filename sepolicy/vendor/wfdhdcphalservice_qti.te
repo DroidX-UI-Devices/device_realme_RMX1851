@@ -1,0 +1,1 @@
+allow wfdhdcphalservice_qti tombstoned_crash_socket:sock_file write;
