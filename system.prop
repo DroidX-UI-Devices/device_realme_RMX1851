@@ -104,3 +104,6 @@ persist.sys.binary_xml=false
 
 # WFD
 persist.sys.wfd.virtual=0
+
+# Disable vsync for cpu rendered apps
+debug.cpurend.vsync=false
