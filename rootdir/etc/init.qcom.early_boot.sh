@@ -468,3 +468,6 @@ case "$lcd_info" in
     *)
         setprop persist.vendor.display.lcd.panel true;;
 esac
+
+# Disable Gms Intent Operation Service
+pm disable com.google.android.gms/.chimera.GmsIntentOperationService
