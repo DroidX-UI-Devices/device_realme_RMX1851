@@ -201,6 +201,10 @@ PRODUCT_PACKAGES += \
     android.hardware.contexthub@1.0-impl.generic \
     android.hardware.contexthub@1.0-service
 
+# Disable blur on app-launch
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.launcher.blur.appLaunch=0
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service:64 \
