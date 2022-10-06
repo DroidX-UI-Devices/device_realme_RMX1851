@@ -37,6 +37,7 @@ vendor.audio.tunnel.encode=false
 vendor.audio.use.sw.alac.decoder=true
 vendor.audio.use.sw.ape.decoder=true
 persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
+vendor.audio.feature.kpi_optimize.enable=false
 
 # Bluetooth
 persist.bluetooth.a2dp_offload.disabled=true
