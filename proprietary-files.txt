@@ -1087,8 +1087,11 @@ vendor/lib64/libsns_low_lat_stream_stub.so|4b06d6f93bc2937aa9777413924ca9d015b6f
 vendor/lib64/libsnsapi.so|055d54b2a5c9137afe01f272298aa20bd629b345
 vendor/lib64/libsnsdiaglog.so|9631f7338838dd4624ab1d974b1085b28a3cd9f4
 vendor/lib64/sensors.ap.so|ec8b17c9ba3f4bd8c15bd7ae8453b305bde39fdc
-vendor/lib64/sensors.ssc.so|fb34b091b70bea7ea19b6daa1359306afcc70ff8
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|31e21a6219a19e3a1af1e393c30d04a8dcc6992e
+
+# Sensors - from PL2_sprout-user 10 QKQ1.190828.002 00WW_4_150
+vendor/lib/sensors.ssc.so|bee13b2ad7f1ef0d2cf63708fa38ad76877ea287
+vendor/lib64/sensors.ssc.so|42577aa881baa287ec037c0e59972ad0e0358b08
 
 # Sensors configs - from RMX1851EX_11_C.15
 vendor/etc/sensors/config/ak991x_dri_0.json|07bab9123b532777c85435aa3c3a50cc315b3538
