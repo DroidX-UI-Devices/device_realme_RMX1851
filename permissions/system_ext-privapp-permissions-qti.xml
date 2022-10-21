@@ -39,4 +39,8 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
+    <privapp-permissions package="com.android.systemui">
+        <permission name="android.permission.READ_PHONE_STATE"/>
+	<permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </privapp-permissions>
 </permissions>
