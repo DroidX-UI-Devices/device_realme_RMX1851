@@ -22,4 +22,7 @@
     <!-- Default for LineageSettings.Secure.VOLUME_PANEL_ON_LEFT -->
     <bool name="def_volume_panel_on_left">true</bool>
 
+
+    <!-- Whether to show a preference item for regulatory information in About phone -->
+    <bool name="config_show_regulatory_info">true</bool>
 </resources>
