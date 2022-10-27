@@ -93,6 +93,11 @@
             <Limit name="measured-frame-rate-1280x720" range="17-34" />
             <Limit name="measured-frame-rate-1920x1080" range="7-15" />
         </MediaCodec>
+        <MediaCodec name="c2.android.vp9.encoder" type="video/x-vnd.on2.vp9" update="true">
+            <Limit name="measured-frame-rate-320x180" range="248-373" />
+            <Limit name="measured-frame-rate-640x360" range="61-61" />
+            <Limit name="measured-frame-rate-1280x720" range="20-20" />
+        </MediaCodec>
     </Encoders>
     <Decoders>
         <MediaCodec name="OMX.qcom.video.decoder.avc" type="video/avc" update="true">
@@ -197,6 +202,8 @@
          <MediaCodec name="c2.android.mpeg4.decoder" update="true">
             <Type name="video/mp4v-es">
                 <Limit name="measured-frame-rate-176x144" range="350-370" />
+                <Limit name="measured-frame-rate-480x360" range="501-752" />
+                <Limit name="measured-frame-rate-1280x720" range="189-284" />
             </Type>
          </MediaCodec>
     </Decoders>
