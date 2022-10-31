@@ -161,6 +161,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@2.0 \
     vendor.qti.hardware.btconfigstore@2.0.vendor
 
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.vendor.bluetooth.modem_nv_support=true
+
 # Camera
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
