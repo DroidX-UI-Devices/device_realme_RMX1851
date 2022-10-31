@@ -46,6 +46,7 @@ pm.dexopt.first-boot=quicken
 pm.dexopt.boot=verify
 
 # Display
+debug.sdm.support_writeback=0
 ro.qualcomm.cabl=0
 debug.sf.disable_client_composition_cache=1
 ro.vendor.display.ad=1
