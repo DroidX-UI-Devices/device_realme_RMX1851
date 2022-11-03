@@ -168,6 +168,9 @@ ro.telephony.default_network=22,22
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=SDM710
 
+# System
+persist.sys.binary_xml=false
+
 # Touch Hax 
 touch.size.scale=1
 touch.size.bias=0
