@@ -80,6 +80,7 @@ ro.vendor.display.cabl=2
 ro.vendor.display.sensortype=2
 vendor.display.enable_default_color_mode=1
 debug.force_no_blanking=true
+debug.sf.enable_gl_backpressure=1
 
 # DPM
 persist.vendor.dpmhalservice.enable=1
