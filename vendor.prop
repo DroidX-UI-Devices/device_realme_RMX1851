@@ -187,3 +187,6 @@ TapSlop=1px
 
 # USB
 vendor.usb.controller=a600000.dwc3
+
+# Zygote
+zygote.critical_window.minute=10
