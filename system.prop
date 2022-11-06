@@ -80,7 +80,7 @@ ro.netflix.bsp_rev=Q670-14477-1
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
 
-# Radio
+# Radio/RIL
 DEVICE_PROVISIONED=1
 ril.subscription.types=NV,RUIM
 persist.rcs.supported=0
@@ -89,6 +89,8 @@ ro.telephony.default_network=22,20
 persist.radio.multisim.config=dsds
 persist.radio.custom_exp_ecc=1
 telephony.lteOnCdmaDevice=1
+persist.vendor.ims.disableADBLogs=1
+persist.vendor.ims.disableIMSLogs=1
 
 # Sensors
 ro.qti.sensors.wu=false
