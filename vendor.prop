@@ -54,6 +54,7 @@ persist.vendor.service.bdroid.soc.alwayson=true
 persist.vendor.service.bt.iot.enablelogging=true
 vendor.bluetooth.soc=cherokee
 vendor.qcom.bluetooth.soc=cherokee
+bluetooth.device.default_name=Realme 3 pro
 
 # Blur on app-launch
 ro.launcher.blur.appLaunch=0
