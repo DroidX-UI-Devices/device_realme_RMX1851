@@ -6,11 +6,11 @@
 
 $(call inherit-product, device/realme/RMX1851/device.mk)
 
-# Inherit some common evolution stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+# Inherit some common LineageOS stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := cherish_RMX1851
+PRODUCT_NAME := lineage_RMX1851
 PRODUCT_DEVICE := RMX1851
 PRODUCT_BRAND := Realme
 PRODUCT_MODEL := realme 3 Pro
@@ -32,18 +32,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="RMX1851"
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
-
-#Cherish Add-on
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=Cykeek
-CHERISH_BUILD_TYPE := OFFICIAL
-
-#Gapps Build or Vanilla Build
-WITH_GMS := true
-#CHERISH_VANILLA := true
-
-# Add Systemless Pixel Launcher mod
-$(call inherit-product-if-exists, vendor/PixelLauncher/PixelLauncher.mk)
-
-PIXEL_LAUNCHER_VARIANT := tawaret
-ICONS_VARIANT := dgicons

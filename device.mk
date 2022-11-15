@@ -149,7 +149,6 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
-    libbthost_if \
     vendor.qti.hardware.btconfigstore@1.0 \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0 \
@@ -162,7 +161,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service_64 \
     libgui_vendor \
     libstdc++.vendor \
-    Snap \
     vendor.qti.hardware.camera.device@1.0.vendor
 
 # Charger
@@ -206,7 +204,6 @@ PRODUCT_PACKAGES += \
     gralloc.sdm710 \
     hwcomposer.sdm710 \
     libtinyxml \
-    libtinyxml.vendor \
     libvulkan \
     memtrack.sdm710 \
     vendor.display.config@1.9 \
@@ -334,9 +331,9 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
 
 # Parts
-#$(call inherit-product, packages/apps/RealmeParts/parts.mk)
-#PRODUCT_COPY_FILES += \
-#    packages/apps/RealmeParts/init/cabc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cabc.rc
+$(call inherit-product, packages/apps/RealmeParts/parts.mk)
+PRODUCT_COPY_FILES += \
+    packages/apps/RealmeParts/init/cabc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cabc.rc
 
 # Power
 PRODUCT_PACKAGES += \
@@ -460,9 +457,8 @@ PRODUCT_COPY_FILES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
-    libdisplayconfig \
-    libdisplayconfig.vendor \
     libnl \
     libqdMetaData \
     libqdMetaData.system \
     libwfdaac_vendor
+
