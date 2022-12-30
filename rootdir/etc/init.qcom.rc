@@ -139,6 +139,9 @@ on boot
 
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/device/extldo
     chmod 0660 /sys/class/rfkill/rfkill0/device/extldo
+    
+    # Disable surfaceflinger prime_shader
+    setprop service.sf.prime_shader_cache 0
 
     # Disable surfaceflinger prime_shader
     setprop service.sf.prime_shader_cache 0
