@@ -20,6 +20,10 @@
 using android::base::SetProperty;
 using android::base::ReadFileToString;
 using android::base::Trim;
+using std::string;
+
+string heapstartsize, heapgrowthlimit, heapsize,
+       heapminfree, heapmaxfree, heaptargetutilization;
 
 static const char *snet_prop_key[] = {
     "ro.boot.vbmeta.device_state",
@@ -76,6 +80,7 @@ static void workaround_snet_properties() {
 
 void vendor_load_properties()
 {
+    SetProperty("dalvik.vm.heaptargetutilization", heaptargetutilization);
     workaround_snet_properties();
     const auto set_ro_build_prop = [](const std::string &source,
             const std::string &prop, const std::string &value) {
