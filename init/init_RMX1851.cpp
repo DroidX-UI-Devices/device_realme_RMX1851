@@ -5,6 +5,7 @@
  */
 
 #include <vector>
+#include <sys/sysinfo.h>
 
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
@@ -73,6 +74,33 @@ void property_override(char const prop[], char const value[], bool add = true)
         __system_property_add(prop, strlen(prop), value, strlen(value));
 }
 
+void load_dalvik_properties() 
+{
+    struct sysinfo sys;
+
+    sysinfo(&sys);
+    if (sys.totalram > 3072ull * 1024 * 1024)
+	{
+		// from - phone-xxhdpi-6144-dalvik-heap.mk
+		property_override("dalvik.vm.heapstartsize", "8m");
+		property_override("dalvik.vm.heaptargetutilization", "0.75");
+		property_override("dalvik.vm.heapgrowthlimit", "192m");
+		property_override("dalvik.vm.heapsize", "512m");
+		property_override("dalvik.vm.heapmaxfree", "8m");
+		property_override("dalvik.vm.heapminfree", "512k");
+	}
+	else
+	{
+                // from - phone-xhdpi-4096-dalvik-heap.mk
+		property_override("dalvik.vm.heapstartsize", "8m");
+		property_override("dalvik.vm.heaptargetutilization", "0.7");
+		property_override("dalvik.vm.heapgrowthlimit", "192m");
+		property_override("dalvik.vm.heapsize", "512m");
+		property_override("dalvik.vm.heapmaxfree", "16m");
+		property_override("dalvik.vm.heapminfree", "8m");
+	}
+}
+
 static void workaround_snet_properties() {
     for (int i = 0; snet_prop_key[i]; ++i)
         property_override(snet_prop_key[i], snet_prop_value[i]);
@@ -81,6 +109,7 @@ static void workaround_snet_properties() {
 void vendor_load_properties()
 {
     SetProperty("dalvik.vm.heaptargetutilization", heaptargetutilization);
+    load_dalvik_properties();
     workaround_snet_properties();
     const auto set_ro_build_prop = [](const std::string &source,
             const std::string &prop, const std::string &value) {
