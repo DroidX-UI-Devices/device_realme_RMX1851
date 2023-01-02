@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_RMX1851.mk
+    $(LOCAL_DIR)/voltage_RMX1851.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_RMX1851-user \
-    lineage_RMX1851-userdebug \
-    lineage_RMX1851-eng
+    voltage_RMX1851-user \
+    voltage_RMX1851-userdebug \
+    voltage_RMX1851-eng
