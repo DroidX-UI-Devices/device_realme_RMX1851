@@ -19,6 +19,9 @@ PRODUCT_MANUFACTURER := Realme
 # disable/enable blur support, default is false
 TARGET_ENABLE_BLUR := true
 
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # Quick tap feature
 TARGET_SUPPORTS_QUICK_TAP := true
 
