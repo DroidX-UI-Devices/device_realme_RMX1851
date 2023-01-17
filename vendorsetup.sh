@@ -13,13 +13,7 @@ echo "================================"
 
 banner 2>1
 
-# Vendor
-banner 2>1
-echo "Clonning Vendor..."
-git clone https://github.com/Cykeek-Labs/vendor_realme_RMX1851 -b 13 vendor/realme/RMX1851
-
 # Kernel
-
 banner 2>1
 echo "Cloning Kernel..."
 git clone https://github.com/kdrag0n/proton-clang prebuilts/clang/host/linux-x86/proton-clang
