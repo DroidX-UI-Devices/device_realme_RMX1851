@@ -52,7 +52,7 @@ BOARD_RAMDISK_USE_LZ4 := true
 
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := proton
-TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-r437112b
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/proton-clang
 TARGET_KERNEL_SOURCE := kernel/realme/sdm710
 TARGET_KERNEL_CONFIG := lineageos_RMX1851_defconfig
 TARGET_KERNEL_OPTIONAL_LD := true
