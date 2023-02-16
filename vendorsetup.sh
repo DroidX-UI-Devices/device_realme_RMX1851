@@ -35,4 +35,4 @@ sleep 1s
 echo "Cloning hals from Lineage..."
 git clone https://github.com/LineageOS/android_hardware_qcom_audio hardware/qcom-caf/sdm845/audio --depth=1
 git clone https://github.com/LineageOS/android_hardware_qcom_media hardware/qcom-caf/sdm845/media --depth=1
-git clone https://github.com/LineageOS/android_hardware_qcom_display hardware/qcom-caf/sdm845/display --depth=1
+git clone https://github.com/VoltageOS/hardware_qcom_display hardware/qcom-caf/sdm845/display --depth=1
