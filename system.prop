@@ -60,6 +60,9 @@ ro.vendor.display.ad=1
 ro.vendor.display.sensortype=2
 ro.vendor.display.ad.sdr_calib_data=/vendor/etc/OPPO_OLED_AD_calib.cfg
 
+# Droid-X props
+ro.droidx.maintainer=Cykeek×Ashwani212
+
 # Graphics
 debug.sf.enable_hwc_vds=1
 persist.demo.hdmirotationlock=false
